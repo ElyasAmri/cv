@@ -1,0 +1,3 @@
+{
+    "test": "pdflatex -interaction=nonstopmode cv.tex && pdflatex -interaction=nonstopmode engineer-resume.tex "
+}

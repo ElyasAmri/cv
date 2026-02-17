@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+
+% Match CV colors
+\definecolor{headercolor}{RGB}{70,130,180}
+\definecolor{sectioncolor}{RGB}{70,130,180}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Large\bfseries\color{headercolor} ELYAS AL-AMRI} \\[4pt]
+    {\normalsize Personal Statement -- Integrated Circuit and Systems Design} \\[2pt]
+    {\small \faEnvelope\ \href{mailto:elal48989@hbku.edu.qa}{elal48989@hbku.edu.qa} \quad \faEnvelope\ \href{mailto:contact@elyasamri.com}{contact@elyasamri.com} \quad \faEnvelope\ \href{mailto:elyas.amri@gmail.com}{elyas.amri@gmail.com} \quad \faGlobe\ \href{https://elyasamri.com}{elyasamri.com}}
+\end{center}
+
+\vspace{6pt}
+
+I didn't expect to care about hardware as much as I do. Most of my early coursework was software-heavy, but once I started working on projects that touched the physical layer (wireless communication, compressed sensing, assembly language programming), I realized I'm more interested in systems that interact with the real world than purely abstract computation.
+
+Dr.\ Bo Wang's assembly language course involved a lengthy project that forced me to think about computation at the instruction level. It's tedious work, but it's also clarifying. You can't hide inefficiency behind abstractions when you're writing in assembly. That mindset carried over to a wireless communication project with Dr.\ Hasan Kurban, where my senior group worked on a system that had to balance range and bandwidth. The tradeoff isn't just a textbook concept; it's a physical constraint you feel when you're trying to push data over a noisy channel. That's when I started thinking about IC and systems design as something worth pursuing formally.
+
+I've also been working with Dr.\ Ayman Samara at QEERI on a microscope fringe projection system (still ongoing), and with Dr.\ Ali Safa on a compressed sensing project for CO\textsubscript{2} data. Compressed sensing is intriguing because it sits right between hardware constraints and algorithmic cleverness. It's not pure circuit design, but it's the kind of systems-level thinking I want to do more of. After working with MCUs across several of these projects, I started reading about photonic and optical ICs, and the more I read the more it makes sense to me. Optical circuits solve problems that electrical ones keep running into: bandwidth bottlenecks, power density, signal degradation over distance.
+
+The wireless communication app I'm building with Dr.\ Azzam Abu Rayesh is another example. It's not just about writing software, it's about understanding how the underlying RF hardware behaves and designing around its limitations. I've also done work on electronics outside of formal coursework (mostly hands-on projects that didn't fit into any specific class), and I've realized I think better when I'm working on something that has to interface with real signals, real noise, real power constraints.
+
+HBKU's position in Education City has given me access to research environments I wouldn't have had elsewhere: QCRI for the LLM cybersecurity work with Dr.\ Fatih Deniz (which placed third in the internship competition), QEERI for the fringe projection project. But what's been most useful is working with faculty who let me take on non-standard projects. Dr.\ Jens Schneider had me reverse-engineer a web app to scrape course data from another university, which wasn't hardware-related but taught me a lot about systems integration. Dr.\ Samir Brahim Belhaouari and I co-authored a SIAM paper on nested loop counting, which was pure combinatorics but sharpened my ability to think rigorously about optimization problems.
+
+I've been recognized as a QRDI Rising Innovator, but what I'm actually after is to stop working above the abstraction layer and start working inside it. I can write software for a long time, but I'm better and more engaged when the work is hands-on. I want to work with Dr.\ Bo Wang on photonic IC design, bringing together what I've learned about signal processing and hardware constraints into something I can actually build. The ICSD program is where that happens.
+
+\end{document}

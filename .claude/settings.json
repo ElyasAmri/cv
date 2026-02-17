@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "latexmk -pdf -cd cv.tex",
+            "timeout": 60,
+            "statusMessage": "Compiling LaTeX files"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+
+% Match CV colors
+\definecolor{headercolor}{RGB}{70,130,180}
+\definecolor{sectioncolor}{RGB}{70,130,180}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Large\bfseries\color{headercolor} ELYAS AL-AMRI} \\[4pt]
+    {\normalsize Personal Statement -- Data Science and Engineering} \\[2pt]
+    {\small \faEnvelope\ \href{mailto:elal48989@hbku.edu.qa}{elal48989@hbku.edu.qa} \quad \faEnvelope\ \href{mailto:contact@elyasamri.com}{contact@elyasamri.com} \quad \faEnvelope\ \href{mailto:elyas.amri@gmail.com}{elyas.amri@gmail.com} \quad \faGlobe\ \href{https://elyasamri.com}{elyasamri.com}}
+\end{center}
+
+\vspace{6pt}
+
+I've worked on enough projects at this point that I'm not entirely sure what to specialize in. I seem to pick up any field I touch. My 3.97 GPA in Computer Engineering at HBKU reflects consistent performance, but what's been more interesting is how different each project has been. I co-authored a SIAM paper with Dr.\ Samir Brahim Belhaouari on nested loop counting (pure combinatorics), worked with Mahmod AlZubadi on FADA (a fetal anomaly detection system for the AI4GH Innovation Hub using ML on ultrasound images), and placed third in the QCRI internship competition for an LLM cybersecurity project under Dr.\ Fatih Deniz. That's math, healthcare AI, and security in one sentence.
+
+The FADA project gave me the most perspective. We were building models to detect fetal anomalies from ultrasound data, targeting maternal health outcomes in the MENA region. The models worked, but they were big, slow, and impractical for the clinics that actually needed them. That stuck with me. During the QCRI internship, the cybersecurity project used multiple LLMs as judges to review security issues, and the inference cost was brutal. Both experiences pointed me toward the same problem: these models are too large to run where they need to run. That's what got me interested in neural network pruning, specifically dynamic and aggressive pruning methods that can shrink architectures without losing the parts that matter.
+
+I've also been working on compressed sensing with Dr.\ Ali Safa (CO\textsubscript{2} data), a microscope fringe projection system with Dr.\ Ayman Samara at QEERI (ongoing), and a wireless communication app with Dr.\ Azzam Abu Rayesh. The wireless communication course project with Dr.\ Hasan Kurban was where I first realized the range vs.\ bandwidth tradeoff isn't just a formula; it's a fundamental constraint that shows up everywhere in systems design. I didn't expect a senior group project to shift how I think about optimization, but it did.
+
+HBKU's setup in Education City has been useful. I've had access to QCRI and QEERI internships without leaving the ecosystem, and the faculty here (Dr.\ Belhaouari, Dr.\ Wang, Dr.\ Safa, Dr.\ Schneider) have been surprisingly willing to let me take on non-trivial work. I reverse-engineered a web app for Dr.\ Schneider to fetch course data from another university's system, which wasn't in any syllabus but taught me more about web scraping and authentication than most formal courses would have. I've been recognized as a QRDI Rising Innovator, which is nice, but what I'm actually after is the formal ML depth I'm missing. I've been teaching myself most of this, and I can feel where the gaps are.
+
+I want to work with Dr.\ Belhaouari on neural architecture optimization, specifically on dynamic pruning strategies that let you deploy models in resource-constrained settings without gutting their accuracy. The Data Science and Engineering program gives me the theoretical grounding to do that properly, not just hacking at architectures until something works.
+
+\end{document}
