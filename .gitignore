@@ -9,5 +9,14 @@
 *.bbl
 *.blg
 
-# Examples directory
+# LaTeX build artifacts
+*.synctex(busy)
+*.nav
+*.snm
+
+# Reference templates and old versions (kept locally, not published)
 examples/
+archive/
+
+# Editor / tooling state
+.omc/
